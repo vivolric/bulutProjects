@@ -39,6 +39,7 @@ public class Java2DArrayEx2 {
         // water   $0.25   $0.27    $0.30   $0.27
         // bread   $0.70   $0.40    $1.05   $0.72
         // meat    $7.35   $9.99    $7.30   $8.21
+
         for (int row = 0; row < 3; row++) {
             double sum = 0;
             for (int col = 0; col < 3; col++) {

@@ -1,6 +1,7 @@
 package JavaTechnoStudy.day17;
 
 public class Java2DArrayEx1 {
+    
     public static void main(String[] args) {
         String[] comics = {"Marvel", "DC"};
         String[] fiction = {"The Lord of the rings", "Star war", "Harry Potter"};
