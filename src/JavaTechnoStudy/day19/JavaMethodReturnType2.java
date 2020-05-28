@@ -14,7 +14,9 @@ public class JavaMethodReturnType2 {
         System.out.println(initial("Yusuf") + initial("Esenboga"));
     }
 
-    private static String initial(String name) {
+    private static String initial(String name){
+    // method type is String, name is initial, parameter is String name is name
+
         return name.charAt(0) + ".";
     }
 }

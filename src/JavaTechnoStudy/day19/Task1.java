@@ -10,6 +10,8 @@ public class Task1 {
     // part 3. create a method that prints even numbers in given array
 
     public static void main(String[] args) {
+        //  length        1  2  3  4  5  6  7  8  9
+        //  index         0  1  2  3  4  5  6  7  8
         int[] numbers = {6, 7, 4, 99, 1, 2, 5, 4, 3};
         printMax(numbers);
         printMin(numbers);
@@ -36,7 +38,8 @@ public class Task1 {
 
     // method that prints even numbers in given array
     public static void printEvenNumbers(int[] array) {
-        for (int number : array) {
+        System.out.print("Even numbers: ");
+        for (int number : array) {   // bu for each loop kullaniyoruz
             if (number % 2 == 0) {
                 System.out.print(number + " ");
             }
@@ -46,9 +49,9 @@ public class Task1 {
 
     public static void printDecreasingOrder(int[] array) {
         Arrays.sort(array);
-
-        for (int i = array.length - 1; i < 0; i--) {
-            System.out.println(array[i] + " ");
+        System.out.print("Decreasing Order: ");
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
 
         }
         System.out.println();

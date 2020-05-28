@@ -9,7 +9,7 @@ public class JavaAutoboxingUnboxing {
 
         numbers.add(15);
         numbers.add(1);
-        Integer integer1 = new Integer(5);
+        Integer integer1 = new Integer(5); // object olusturulmus
         numbers.add(integer1);
 
         //Automatic conversion of primitive types to the object of their
@@ -25,6 +25,7 @@ public class JavaAutoboxingUnboxing {
         // converting reference type to primitive(wrapper class)
 
         // unboxing: get elemets from reference and put into primitive
+
         int j = numbers.get(0);
     }
 }

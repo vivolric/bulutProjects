@@ -18,7 +18,7 @@ public class Task4 {
         for (int result : results) {
             sum += result;
         }
-        double average = (double) sum / results.length;
+        double average = (double) sum / results.length;   // neden kusurati alamiyoruz widening yaptik burda cunku
         System.out.println(name + ": " + average);
     }
 }

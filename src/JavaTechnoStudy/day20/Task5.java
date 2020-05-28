@@ -13,6 +13,7 @@ public class Task5 {
         printn(30L);
         printn(40f);
         printn(50D);
+        printn(35);
     }
 
 //    public static void printn(int n) {
@@ -22,7 +23,9 @@ public class Task5 {
     public static void printn(double n) {
         System.out.println("You have double: " + n);
     }
-
+    public static void printn(int n) {
+        System.out.println("You have integer: " + n);
+    }
     public static void printn(float n) {
         System.out.println("You have float: " + n);
     }

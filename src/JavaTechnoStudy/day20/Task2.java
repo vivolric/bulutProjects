@@ -2,7 +2,7 @@ package JavaTechnoStudy.day20;
 
 public class Task2 {
 //create a method that calculates perimeter of triangle
-    // constraints: method name must be "perimeter"
+    // constraints: method name must be "perimeter"  cevre demek
 
     public static int perimeter(int a, int b, int c) {
         return a + b + c;

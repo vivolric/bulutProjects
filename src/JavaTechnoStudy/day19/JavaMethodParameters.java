@@ -20,6 +20,8 @@ public class JavaMethodParameters {
 
     // sums a and b, then prints sum as result
     public static void sumAndPrint(int a, int b) {
+        // void methodu icin kesinlikle ssout kullanmaliyiz.
+       // cunku return type yok.
         System.out.println(a + " + " + b + " = " + (a + b));
     }
 

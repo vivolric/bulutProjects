@@ -11,10 +11,10 @@ public class Task1 {
         colors.add("Blue");
 
 
-        printColorsLines(colors);
+        printColorsLines(colors);   // method, it will iterate each element in diff line
         addToFirstPosition(colors, "Yellow");
         addToFirstPosition(colors, "Pink");
-        printColors(colors);
+        printColors(colors); //it will iterate each element in same line
     }
 
     // Write a method to create a new array list,

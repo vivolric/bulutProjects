@@ -15,7 +15,7 @@ public class Task3 {
         System.out.println(Arrays.toString(names));
 
         //2.way
-//        for(String name : names) {
+//        for(String name : names) {   for each kullaniyoruz
 //            System.out.print(name + " ");
 //        }
     }

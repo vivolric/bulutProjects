@@ -15,5 +15,18 @@ public class JavaMethodVarargs {
 
         System.out.println("Number of arguments: " + argumentsSize);
     }
-
 }
+
+/*Java Varargs
+ In this article, you’ll learn about varargs in Java with the help of examples.
+ You will also learn when to use varargs and when not to use them.
+
+ What is varargs in Java?
+ Let’s suppose you are creating a Java method. However,
+ you are not sure how many arguments your method is going to accept.
+ To address this problem, Java 1.5 introduced varargs.
+
+ Varargs is a short name for variable arguments.
+ In Java, an argument of a method can accept arbitrary number of values.
+ This argument that can accept variable number of values is called varargs.
+ */
