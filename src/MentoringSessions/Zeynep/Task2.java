@@ -1,4 +1,6 @@
-package MentoringSessions.Zeynep;//package MentoringSessions.Zeynep;
+package MentoringSessions.Zeynep;
+
+
 //
 //import java.util.Scanner;
 //
