@@ -19,6 +19,5 @@ public class SchoolManagement {   //  main class
 
         System.out.println(artLyceum);
 
-
+        }
     }
-}

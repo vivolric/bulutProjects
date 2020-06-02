@@ -1,8 +1,8 @@
 package JavaTechnoStudy.day44.tasks.task1;
 
 public class Student extends Person {   // child class
-    private School school;
-    private double fee;
+    private School school; // instance variable
+    private double fee;   // instance variable
 
     public Student(String name, String address, School school, double fee) {
         super(name, address);
@@ -33,7 +33,7 @@ public class Student extends Person {   // child class
         return "\n\nStudent" +
                 "\nschool: " + school.getName() +
                 super.toString() +
-                "\nfee: " + fee;
+                "\nfee: " + fee;  // this is reuse to make the codes maintainable o have less work.
     }
 
 }

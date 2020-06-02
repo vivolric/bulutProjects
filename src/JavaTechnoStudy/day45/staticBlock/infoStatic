@@ -1,0 +1,29 @@
+
+
+
+-------------- STATIC BLOCK ---------------------
+no matter what static block will print in the main method
+
+because static block depend on new object of the class.
+
+Also static block will print first
+
+
+----------- INITIALIZER BLOCK ----------------------
+
+if you want to print initializer block, you have to create object of the clas inside of the main method.
+
+Initializer block will print before the method belongs to class and after Static Block.
+
+
+------------ METHOD WHICH IS BELONG TO A CLASS WITHOUT STATIC -------------------
+If you want to call the method, you have to create a object.
+
+Method will print last.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+--------------- STATIC BLOCK =====> INITIALIZER BLOCK =====> METHODS ----------------
+
+

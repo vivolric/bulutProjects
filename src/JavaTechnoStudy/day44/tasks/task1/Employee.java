@@ -1,7 +1,7 @@
 package JavaTechnoStudy.day44.tasks.task1;
 
 public class Employee extends Person {
-    private School school;
+    private School school;  // instance variable
     private double salary;
 
     public Employee(String name, String address, double salary) {  // constructor method
@@ -30,7 +30,8 @@ public class Employee extends Person {
     public String toString() {
         return "\n\nEmployee" +
                 //"school=" + school +
-                super.toString() +
+                super.toString() + // which is going to do return "name and address" from Person class,
+                // why? becasue if we add some fields to Person class, it will call them automatically
                 "\nsalary: " + salary;
     }
 }
