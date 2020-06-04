@@ -24,6 +24,9 @@ public class JavaSet {
         boolean add_3_again = set.add(3);
         boolean add_2_again = set.add(2);
 
+        // hashSet: it is not ordered and there is no duplication
+        // LinkedHashSet: ordered version of HashSet, insertion order
+        // treeSet: Ascending Order, Alphabetical, Numerical Order
 
     }
 

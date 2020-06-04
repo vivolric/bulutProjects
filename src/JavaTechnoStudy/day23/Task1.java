@@ -95,7 +95,8 @@ public class Task1 {
 
         printSet(numbers);
 
-
+        // Array is fixed size, we have to define length off array
+        // ArrayList is resizeable, it
     }
 
 }

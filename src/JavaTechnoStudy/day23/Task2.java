@@ -34,12 +34,13 @@ public class Task2 {
         int setSize = namesSet.size();
         int arraySize = names.length;
 
-        return arraySize != setSize;
+        return arraySize != setSize;   // it means that there is no duplication
     }
 
-    //4. check if you have name "Ali" in you set/list,
+    // 4. check if you have name "Ali" in you set/list,
     // if you have, print he is best mentor ever
     // else, print I wish we had him
+
     public static boolean hasName(HashSet<String> set, String name) {
         return set.contains(name);
     }
@@ -54,8 +55,8 @@ public class Task2 {
         // 2. way
         System.out.println(
                 hasName(set, "Ali")
-                        ? "He is best mentor ever!!!"
-                        : "I wish we had him"
+                        ? "He is best mentor ever!!!"  // if statement, ternary
+                        : "I wish we had him"          // varargs
         );
     }
 }
