@@ -20,7 +20,7 @@ public class Task3 {
         HashMap<String, List<Integer>> positionSalaries = new HashMap<>();
 
         String position = "Manager";
-        List<Integer> salary = Arrays.asList(100_000, 5000, 50_000);
+        List<Integer> salary = Arrays.asList(100_000, 5000, 50_000); // birden fazla value ekleyebiliyoruz burda
         positionSalaries.put(position, salary);
 
         position = "SDET";
@@ -45,6 +45,11 @@ public class Task3 {
         result.put(position, salary);
 
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getPositionSalaries());
+        System.out.println(getPositionSalaries2());
     }
 }
 

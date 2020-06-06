@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Task2 {
     // create method that return Map as position and color
+    //                                    key        value
 //    ex
 //    1 Red
 //    2 Green

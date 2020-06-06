@@ -17,7 +17,11 @@ public class Task1 {
         System.out.println("login: " + login);
         removeAll(login);
         System.out.println("login: " + login);
-        System.out.println("second:" + secondMap);
+        System.out.println("second: " + secondMap);
+        printLogin(secondMap);
+        getSize(secondMap); // int sizeOfMap = secondMap.keySet().size();
+        removeAll(secondMap);
+
 
 //        printLogin(login);
 //        removeAll(login);
@@ -40,7 +44,7 @@ public class Task1 {
     public static void removeAll(HashMap<String, String> map) {
         // 1. way
         map.clear();// removes everything from map
-
+        System.out.println(map);
         // 2. way
 //        Set<String> keys = new HashSet<>(map.keySet());
 //        for(String key : keys) {

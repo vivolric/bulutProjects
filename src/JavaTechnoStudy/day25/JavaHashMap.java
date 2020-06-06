@@ -8,7 +8,7 @@ import java.util.Set;
 public class JavaHashMap {
     //Position, salary
     //String, double
-    //SDET, 200_000
+    //SDET, 200_000  -Software Development Engineer in Test
     //Principal, 300_000
 
     public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class JavaHashMap {
 //        double[] salaries = {200_000, 300_000};
 
         HashMap<String, Double> map = new HashMap<>();
+            // iki data type kullanabiliriz
 
 //        public Object put(Object key, Object value):
 //        This method is used to insert an entry in this map.
@@ -42,29 +43,39 @@ public class JavaHashMap {
         map.put("QA tester", 390_000d);
 
         Double sdetSalary = map.get("SDET");
+        Double sdetOfP = map.get("Principal");
+        Double salaryOfQA = map.get("QA tester");
 
 //        public boolean containsKey(Object key):
 //        This method is used to search the specified key from this map.
         boolean hasQATester = map.containsKey("QA tester");
+        boolean hasSDET = map.containsKey("SDET");
+        boolean hasValueOfP = map.containsValue(390_000);
+
+
+
 
 //        public Set keySet():
 //        This method is used to return the Set view containing all the keys.
         Set<String> allKeysInMap = map.keySet();
-//        System.out.println(allKeysInMap);
+        System.out.println("All Keys: " + allKeysInMap);
 
 //        public Set entrySet(): This method is used to return the Set view containing all the keys and values.
         Set<Map.Entry<String, Double>> entries = map.entrySet();
         //Entry<String, Double>
         // is build-in reference type that stores key and value
+        System.out.println("Entries: " + entries);
+
 
         for (Map.Entry<String, Double> row : entries) {
+                                // singular name : plural name , tum entrylerin bir tanesini aliyoruz
             System.out.println("Key: " + row.getKey() + "   Value: " + row.getValue());
             if (row.getValue() > 200_000) {
                 System.out.println("Dream salary!!!");
             }
         }
         // .values() method  returns all values in map
-        ArrayList<Double> salaries = new ArrayList<>(map.values());
+        ArrayList<Double> salaries = new ArrayList<>(map.values()); // burda arrayliste cevirmis hoca
         System.out.println("All Values in map: " + map.values());
 
     }
