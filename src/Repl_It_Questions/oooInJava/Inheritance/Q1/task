@@ -1,0 +1,75 @@
+QUESTION
+
+  1) Why did you use constructor instead of encapsulation in the Employee class
+       If you use encapsulation why did you use encapsulation instead of constructor?
+
+  2) Why did you made the employee variables as protected ?
+            What could happen if the variables are private ?
+            What could happen if the variables are public ?
+
+                 Note: Answer is NOT because I type it in this way.
+
+  Type these answer in the below of the code , command part.
+
+Given main class
+
+   Create an object for the manager and worker classes
+
+   First print manager object.
+   Second print worker object.
+
+Given class Employee. (parent class)
+
+ Create 3 protected variables.
+ String name
+ int salary
+ String department
+
+Set the name , department and salary  (Note: you can use constructor or encapsulation )
+
+Salary should be between 50000 to 120000
+
+if it is out of these range then throw an error which is "Salary should be between 50000 to 120000"
+
+Given class Manager (Child class)
+
+Create one private
+int underemployed
+
+add underemployed to manager constructor.
+instance variable underemployed equal to constructor parameter.
+
+Create a toString method which is printing all the instance variables
+
+For example;
+Name is Emily
+Salary is 60000
+department is Seller
+underemployed is 5
+
+Your result should be
+Name = Emily
+Salary = 60000
+Department = Seller
+Underemployed = 5
+
+Given class Worker (Child class)
+
+Create a instance variable private
+int hourlyIncome
+
+add hourlyIncome to Constructor
+multiply hourlyIncome with 2080 (Calculating the yearly income)
+yearly income should be between 50000 to 120000
+
+Create a toString method which is printing all the instance variables
+
+For example:
+Name is Steven
+department is IT
+hourlyIncome is 45
+
+Your result should be
+Name = Emily
+Department = IT
+Hourly income = 93600

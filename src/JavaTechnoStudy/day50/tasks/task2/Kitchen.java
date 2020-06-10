@@ -5,27 +5,31 @@ import JavaTechnoStudy.day50.tasks.task2.food.*;
 public class Kitchen {
 
     public void cook(Food food) {
-        if(food instanceof Kebab) {
-            Kebab kebab = (Kebab) food;
-            kebab.marinade();
-            kebab.grill();
-            System.out.println("Kebab is ready");
-        } else if(food instanceof Beshbarmak) {
-            ((Beshbarmak) food).boil();
-            System.out.println("Beshbarmak is ready");
-        } else if(food instanceof KarniYarik) {
-            KarniYarik karniYarik = (KarniYarik) food;
-            karniYarik.fry();
-            karniYarik.bake();
-            System.out.println("KarniYarik is ready");
-        } else if(food instanceof Maklube) {
-            Maklube maklube = (Maklube) food;
-            maklube.fry();
-            maklube.design();
-            maklube.boil();
-            System.out.println("Maklube is ready");
+        System.out.println("===========" + food.getClass().getSimpleName() + "==================");
+
+        System.out.println("star cooking");
+
+        if (food instanceof AdanaKebab) {         // AdanaKabab  kabab = new AdanaKaba()
+            AdanaKebab kebab = (AdanaKebab) food;
+            System.out.println(kebab.marinade());
+            System.out.println(kebab.grill());
+        } else if (food instanceof Borsh) {
+            Borsh borsh = (Borsh) food;
+            System.out.println(borsh.boil());
+        } else if (food instanceof Lahmacun) {
+            Lahmacun lahmacun = (Lahmacun) food;
+            System.out.println(lahmacun.dough());
+            System.out.println(lahmacun.topping());
+            System.out.println(lahmacun.bake());
+        } else if (food instanceof Palov) {
+            Palov palov = (Palov) food;
+            System.out.println(palov.fry());
+            System.out.println(palov.boil());
         }
 
+
+        //System.out.println(food.taste());
         food.print();
+        System.out.println("serve food");
     }
 }

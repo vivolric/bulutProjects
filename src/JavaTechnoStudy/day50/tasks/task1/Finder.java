@@ -1,28 +1,30 @@
 package JavaTechnoStudy.day50.tasks.task1;
 
-import JavaTechnoStudy.day50.tasks.task1.files.*;
+import JavaTechnoStudy.day50.tasks.task1.msFiles.MSOffice;
+import JavaTechnoStudy.day50.tasks.task1.msFiles.PowerPointFile;
+import JavaTechnoStudy.day50.tasks.task1.msFiles.TxtFile;
 
 public class Finder {
 
     public static void main(String[] args) {
-        TxtFile txt = new TxtFile();
-        PowerPointFile ppt = new PowerPointFile();
-        DMGFile dmg = new DMGFile();
-        EXEFile exe = new EXEFile();
-//
-        workWithFile(txt);
-        workWithFile(ppt);
-//        workWithFile(dmg);
-//        workWithFile(exe);
+        MSOffice txtFile = new TxtFile();
+        PowerPointFile pptFile = (PowerPointFile) txtFile;
     }
 
-    public static void workWithFile(ReadFile file) {
-        System.out.println();
-        System.out.println(file.open());
-        System.out.println(file.read());
 
-        System.out.println(file.save());
-        System.out.println(file.close());
+    public static void part1() {
+        MSOffice officeFile = new PowerPointFile();  // neden bunu kullaniyoruz? : down casting yapiyoruz.
+//        officeFile.open();
+//        officeFile.read();
+//        officeFile.save();
+//        officeFile.close();
+
+        //down casting
+        PowerPointFile pptFile = (PowerPointFile) officeFile;
+//        pptFile.open();
+//        pptFile.read();
+//        pptFile.save();
+//        pptFile.close();
+        //pptFile.slides();
     }
-
 }

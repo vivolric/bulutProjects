@@ -2,10 +2,10 @@
 create interface Food with method taste();
 
 create concrete classes as
-Kebab: marinade(), grill()
-Beshbarmak: boil()
-KarniYarik: fry(), bake()
-Maklube: fry(), design(), boil()
+AdanaKebab: marinade(), grill()
+Lahmacun: dough(), topping(), bake()
+Borsh: boil()
+Palov: fry(), boil()
 
 **Part 2**
 create class Kitchen with method cook(Food food);
@@ -14,5 +14,4 @@ ex: kabab first should be marinaded then grilled
 NOTE: no static methods here
 
 **Part 3**
-create class TechnoCafe with several foods to serve
-cook them and serve =)
+create class TechnoCafe with several foods to cook them and serve =)

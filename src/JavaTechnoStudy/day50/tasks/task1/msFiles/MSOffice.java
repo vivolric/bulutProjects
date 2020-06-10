@@ -1,6 +1,6 @@
-package JavaTechnoStudy.day50.tasks.task1.files;
+package JavaTechnoStudy.day50.tasks.task1.msFiles;
 
-public interface ReadFile {
+public interface MSOffice {
     String open();
 
     String read();

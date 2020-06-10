@@ -1,45 +1,65 @@
 package JavaTechnoStudy.day50.tasks.task1;
 
-import JavaTechnoStudy.day50.tasks.task1.files.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import JavaTechnoStudy.day50.tasks.task1.msFiles.*;
 
 public class Explorer {
 
     public static void main(String[] args) {
-        List<ReadFile> files = new ArrayList<>();
-        files.add(new TxtFile());
-        files.add(new PowerPointFile());
-        files.add(new PowerPointFile());
-        files.add(new DMGFile());
-        files.add(new EXEFile());
+        MSOffice file1 = new PowerPointFile();
+        workWithFile(file1);
 
+        MSOffice file2 = new TxtFile();
+        workWithFile(file2);
 
-        for(ReadFile file : files) {
-            // how to check instance
-            if(file instanceof PowerPointFile) {
-                PowerPointFile ppt = (PowerPointFile) file; //(double)100
-                System.out.println("ppt slide: " + ppt.showSlides());
-            } else if(file instanceof EXEFile) {
-                EXEFile exe = (EXEFile) file;
-                System.out.println("exe: " + exe.run());
-            }
+        MSOffice file3 = new ExcelFile();
+        workWithFile(file3);
 
-        }
 
     }
 
-    public static void downcasting() {
-        ReadFile readFilePPT = new PowerPointFile();
-//        System.out.println("readFilePPT slide: " + readFilePPT.showSlides());
+    public static void workWithFile(MSOffice officeFile) {
+        System.out.println("===========" + officeFile.getClass().getSimpleName() + "==================");
+        System.out.println(officeFile.open());
+        System.out.println(officeFile.read());
+        System.out.println(officeFile.save());
+        System.out.println(officeFile.close());
 
 
-        //if we have reference as parent, and want to access to child method
-        //showSlides
+        if (officeFile instanceof PowerPointFile) {
+            PowerPointFile pptFile = (PowerPointFile) officeFile;
+            System.out.println(pptFile.slides());
+        } else if (officeFile instanceof ExcelFile) {
+            ExcelFile excelFile = (ExcelFile) officeFile;
+            System.out.println(excelFile.formula());
+        }
 
-        //Down casting
-        PowerPointFile ppt = (PowerPointFile) readFilePPT; //(double) 100
-        System.out.println("ppt slide: " + ppt.showSlides());
+
+    }
+
+
+    public static void option1() {
+//        System.out.println("----WORD-----");
+//        workWithFile(file1);
+//        System.out.println("----EXCEL-----");
+//        workWithFile(file2);
+//        System.out.println("----POWER POINT-----");
+//        workWithFile(file3);
+//        System.out.println("----TXT FILE-----");
+//        workWithFile(file4);
+    }
+
+
+    public static void part2(String[] args) {
+        WordFile file1 = new WordFile();
+        ExcelFile file2 = new ExcelFile();
+        PowerPointFile file3 = new PowerPointFile();
+        TxtFile file4 = new TxtFile();
+
+        workWithFile(file1);
+        workWithFile(file2);
+        workWithFile(file3);
+        workWithFile(file4);
+
+
     }
 }
