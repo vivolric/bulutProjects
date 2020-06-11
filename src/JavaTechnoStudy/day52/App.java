@@ -9,6 +9,8 @@ public class App {
         simpleSet.add("X");
         System.out.println(simpleSet);
 
+        System.out.println("\n-------albayim :)-----------\n");
+
         StringSet sortedSet = new SortedStringSet();
         sortedSet.add("Z");
         sortedSet.add("Y");

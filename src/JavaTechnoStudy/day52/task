@@ -5,6 +5,11 @@ Create custom StringSet with methods:
     int size();
     void clear(); //remove all String from StringSet
     boolean isEmpty();
+    void print();
+
+
+
+
 
 create SimpleStringSet that stores String in unique
 

@@ -51,6 +51,7 @@ public class ShoppingCard {
         // device.getName();
 
         //3. way implement getName method in derived class
+
         System.out.println("--------------------");
         System.out.println("------Receipt-------");
         for (Device device : deviceList) {

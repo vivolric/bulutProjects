@@ -1,7 +1,7 @@
 package JavaTechnoStudy.day51;
 
 public abstract class A {
-    public abstract void mehtodA();
+    public abstract void methodA();
 
     public final void print() {
 
@@ -21,7 +21,7 @@ class B extends A {
     }
 
     @Override
-    public void mehtodA() {
+    public void methodA() {
 
     }
 
