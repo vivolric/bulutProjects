@@ -19,7 +19,7 @@ public class SimpleStringSet implements StringSet {
     @Override
     public void add(String s) {
         if (list.contains(s)) {
-            throw new RuntimeException("Duplication in set not allowed");
+            throw new duplicationException("Duplication in set not allowed");
         }
 
         list.add(s);
