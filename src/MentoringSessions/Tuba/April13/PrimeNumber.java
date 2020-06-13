@@ -25,18 +25,18 @@ public class PrimeNumber {
         //int count = 0; --> if I put this here it will be doing increment always, it will not give the exact answer
         // therefore it is inside of for loop
 
-        for(myNumber =1; myNumber <= 50; myNumber++){
+        for (myNumber = 1; myNumber <= 50; myNumber++) {
 
             int count = 0;  // to make it  0 always -- look at line 25
 
-            for (int factors = 1; factors <= myNumber ; factors++) {
-                if(myNumber%factors == 0){
+            for (int factors = 1; factors <= myNumber / 2; factors++) {
+                if (myNumber % factors == 0) {
                     count++;
                 }
             }
-            if(count == 2){
+            if (count == 2) {
                 System.out.println(myNumber + " is a prime number");
             }
         }
     }
-    }
+}

@@ -23,3 +23,22 @@ public class Task1 {
         return taxTotal;
     }
 }
+
+    /*
+
+    METHOD STRUCTURE
+
+    access modifier + return type + method name + (parameter/s) + {body}
+    public static        int          myMethod     (String str) {return};
+
+    access modifier: public, private, protected, default
+
+    return type; int, boolean, double, String,...
+
+    methodName; whatever you want you can name it.
+
+    parameter(): (String str, int a, double b)
+
+    {body} ; {return};
+
+    */

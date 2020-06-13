@@ -6,7 +6,7 @@ public class Task1 {
     //Write a method that will tell you how many words there are in a string
 
     public static void main(String[] args) {
-        wordCount("I love this topic");
+        wordCount("I really love this topic");
     }
 
     public static void wordCount(String str) {

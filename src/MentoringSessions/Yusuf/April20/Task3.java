@@ -1,4 +1,4 @@
-package MentoringSessions.Yusuf;
+package MentoringSessions.Yusuf.April20;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +7,19 @@ import java.util.Random;
 
 public class Task3 {
 
+    /*  Write a method which mixes up the letters of given String
+    return type and parameters will be String
+
+    SAMPLE:
+    yusuf
+    fyuus
+
+
+     */
+
+    public static void main(String[] args) {
+        System.out.println(mixUpLetters("albayim"));
+    }
 
     public static String mixUpLetters(String str) {
         char[] array = str.toCharArray();

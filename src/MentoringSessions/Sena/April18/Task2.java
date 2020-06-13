@@ -1,10 +1,8 @@
 package MentoringSessions.Sena.April18;
 
-public class Task2 {
-    public static void main(String[] args) {
+import java.util.ArrayList;
 
-    }
-}
+public class Task2 {
 
 // 2. A writer just finished writing a book,
 // while reviewing her work she noticed that she used "cause" instead "because"
@@ -18,3 +16,13 @@ public class Task2 {
 
 // write code here
 
+
+//    public static void main(String[] args) {
+//
+//        public String searchingWord
+//}
+
+    public static void main(String[] args) {
+
+    }
+}

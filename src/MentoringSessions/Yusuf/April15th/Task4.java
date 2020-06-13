@@ -5,15 +5,18 @@ public class Task4 {
     //Create method that tells how many vowels does each word have
     // Ex: The first word has 5 vowels
     //     The second word has 2 vowels
+
     public static void main(String[] args) {
-        checkSentence("“As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect.”");
+        checkSentence("“As Gregor Samsa awoke one morning from uneasy dreams " +
+                "he found himself transformed in his bed into a gigantic insect.”");
     }
 
     public static void checkVowel(String str) {
         int count = 0;
         str = str.toLowerCase();
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'
+                    || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
                 count++;
             }
         }

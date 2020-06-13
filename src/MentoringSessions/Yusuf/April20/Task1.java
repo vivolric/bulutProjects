@@ -1,12 +1,14 @@
-package MentoringSessions.Yusuf;
+package MentoringSessions.Yusuf.April20;
 
 public class Task1 {
 
     //Create a method that checks every letter if they are vowel
     // or not and tells the number of vowels in a String
+    // yusuf
+    // 2
 
     public static void main(String[] args) {
-        System.out.println(vowelCount("I love my mentor"));
+        System.out.println(vowelCount("olacak gibi degil albayim"));
     }
 
     public static int vowelCount(String str) {

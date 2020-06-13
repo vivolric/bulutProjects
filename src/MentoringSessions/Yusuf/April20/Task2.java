@@ -1,9 +1,12 @@
-package MentoringSessions.Yusuf;
+package MentoringSessions.Yusuf.April20;
 
 public class Task2 {
 
     //Create a method which has 2 String parameters and counts the vowels inside them
     //return true if they have same amount of vowels, if not false
+    public static void main(String[] args) {
+        System.out.println(vowelCount("albayim"));
+    }
 
     public static int vowelCount(String str) {
         int count = 0;
