@@ -1,15 +1,19 @@
-package MentoringSessions.Yusuf.April29th;
+package MentoringSessions.Yusuf.April29;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;
 
 // Task 1
-// Create a class named Employee in a different file. Employee will have an first name, last name, id number, password
+// Create a class named Employee in a different file.
+// Employee will have an first name, last name, id number, password
 // Create a method in your class which will create new employee and store them in new variables in your class
+
 public class Task1 {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
+
         Employee yusuf = createNewEmp("Yusuf", "Esen", 80808, "qwerty");
         Employee ali = createNewEmp("Ali", "Koklu", 234234, "dghsf");
         Employee dos = createNewEmp("Dos", "Mukhammet", 3543, "dsfgsd");
@@ -18,7 +22,14 @@ public class Task1 {
 
         ArrayList<Employee> list = new ArrayList<>();
 
-        Collections.addAll(list, yusuf, ali, dos, samil, furkat);
+//        list.add(yusuf);
+//        list.add(ali);
+//        list.add(dos);
+//        list.add(samil);
+//        list.add(furkat);
+//        bu da long way
+
+        Collections.addAll(list, yusuf, ali, dos, samil, furkat); // short way
 
         System.out.println("Please give an ID: ");
         int givenID = input.nextInt();
@@ -30,6 +41,7 @@ public class Task1 {
         }
     }
 
+    //return type Employee - name        - parameters prantez icindekiler
     public static Employee createNewEmp(String fName, String lName, int id, String pw) {
         Employee newEmp = new Employee();
         newEmp.firstName = fName;

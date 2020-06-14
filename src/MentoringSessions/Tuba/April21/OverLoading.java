@@ -6,7 +6,7 @@ public class OverLoading {
 // Why do we need methods ?
     // to make java easier
     // to use different outputs
-    // to make our codes reusable
+    // to make our codes reusable  --> bu epey onemli albayim
     // for the time saving
 
     // Why do we need method overloading?
@@ -48,7 +48,11 @@ public class OverLoading {
         return len;
     }
 
-    public static String myMethod(int... num) {  // varargs
+    //Fourth way - using varargs
+
+    public static String myMethod(int... num) {
+        //varargs--> birden fazla parameters 100 tane gibi varargs kullaniyoruz
+        // ayni anda iki tane varargs parantez icinde olamaz
         return Arrays.toString(num);
     }
 
