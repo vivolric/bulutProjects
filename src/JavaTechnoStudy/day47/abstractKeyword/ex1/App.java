@@ -3,8 +3,8 @@ package JavaTechnoStudy.day47.abstractKeyword.ex1;
 public class App {
 
     public static void main(String[] args) {
-        //Shape shape = new Shape(); // cannot create instance of abstract class
 
+        //Shape shape = new Shape(); // cannot create instance of abstract class
 
         //shape.getArea();
         Rectangle rectangle = new Rectangle(5, 4);
@@ -17,6 +17,7 @@ public class App {
         Rectangle
         Area: ....
          */
+
 
         /*
         Circle
