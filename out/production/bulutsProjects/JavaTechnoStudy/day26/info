@@ -1,0 +1,14 @@
+
+--> to add more than one value with an object key,
+we should use ArrayList as a data type in the HashMap
+
+Ex:
+
+    HashMap <String, ArrayList <Integer>> = new HashMap();
+    String odd = "Odd Numbers";
+    ArrayList < Integer> oddNumbers = new ArrayList();
+    oddNumbers.add(1);
+    oddNumbers.add(3);
+    oddNumbers.add(5);
+    oddNumbers.add(7);
+    map.put(odd, oddNumbers);

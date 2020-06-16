@@ -1,0 +1,19 @@
+Differences between Array and ArrayList
+
+       Array                                vs                     ArrayList
+- Array is fixed  size                                     - Dynamic size (resizable)
+- contains primitive and object                            - Contain only objects
+- Array is part of core Java programming                   - Part of collection framework
+- We use length method in Array ( arr.length  )            - We use size method in ArrayList ( size().arrL )
+
+
+Differences between Set and ArrayList
+
+       Set                         vs                   ArrayList
+- No duplication                                 - It allows duplication
+
+
+
+// hashSet: it is not ordered and there is no duplication
+// LinkedHashSet: ordered version of HashSet, insertion order
+// treeSet: Ascending Order, Alphabetical, Numerical Order

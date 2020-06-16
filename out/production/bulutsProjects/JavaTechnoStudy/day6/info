@@ -1,0 +1,4 @@
+
+
+@ str = str.replaceAll("[^\\d.]", "");
+it will remove non numeric letters and charters form string

@@ -1,0 +1,10 @@
+https://www.geeksforgeeks.org/set-in-java/
+
+
+// hashSet: it is not ordered and there is no duplication
+            it gives elements randomly
+// LinkedHashSet: ordered version of HashSet, insertion order
+                  it gives element insertion order
+// treeSet: Ascending Order, Alphabetical, Numerical Order
+            it gives element ascending
+
